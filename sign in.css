@@ -1,15 +1,14 @@
 body{
     margin-left: auto;
     margin-right: auto;
-    background-color: #dbd6ee;
+    background-color: #e6e0fd;
     
     }
     .container{
-        background-image: url(./Images/Sign\ Up\ Screen.png);
             display: flex;
             flex-direction: row;
             background-color: #15521B;
-                    margin-left: auto;
+            margin-left: auto;
             margin-right: auto;
             justify-content: center;
             height: 921px;
@@ -45,7 +44,7 @@ body{
         width: 608px;
     }
     p{
-        color: white;
+        color: black;
         font-size: 25px;
             margin: 0;
 
@@ -69,12 +68,19 @@ body{
         flex-direction: column;
     }
     form input{
-        background-color: #1f1135;
+       background-color: #e6e0fd;
+        
         width: 306px;
         height: 35px;
         margin: 10px;
         border-color: #9b15db;
         
+    }
+    hr{
+        background-color: #000;
+        width: 145px;
+        margin: 25px;
+
     }
         #text, #mail, #place{
             display: flex;
@@ -105,16 +111,23 @@ body{
             color: #0f0f0f;
             margin-top: 34px;
         }
-    
+    .hr{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     .terms{
         display: flex;
         flex-direction: row;
         justify-content: center;
-    
+        align-items: center;
     }
     .terms a{
-        color: #ff69b4;
+        color: black;
+        margin-left: 10px;
 
+    }
+    .terms p{
     }
 
     .logo img{
@@ -133,15 +146,15 @@ body{
     margin-top: 400px;
     }
     #but{
-        background: #1f1135;
+        background:#e6e0fd;
         width: 367px;
         height: 49px;
         border-radius: 10px;
-        color: white;
+        color: black;
         margin-top: 5px;
         margin-bottom: 10px;
         flex-direction: row;
-        border-color: white;
+        border-color: rgb(13, 13, 13);
 display:flex;
     justify-content: center;
     align-items: center;
@@ -159,4 +172,23 @@ margin-top: 20px;
         text-decoration: none;
         color: hotpink;
     
+    }
+    .map{
+        display: flex;
+        flex-direction: column;
+        background-image: url(./Images/Sign\ Up\ Screen.png);
+        align-items: center;
+        justify-content: center;
+    }
+    .map img{
+        width: 384.01px;
+        height: 327px;
+        margin: 33px;
+        }
+    .map h1{
+            color: transparent;
+            background: linear-gradient(to right, #5c2ed1, #da1dda);
+            background-clip: text;
+            margin-top: 0px;
+            font-size: 47px;
     }
