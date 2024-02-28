@@ -62,7 +62,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-background-color: #2f0a63;
+background-color: #391A5B;
 border-radius: 85px;
 height: 600px;
 
@@ -110,7 +110,7 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #4a0b4a;
+    background-color: #391A5B;
 
 }
 .advance{
