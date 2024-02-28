@@ -157,6 +157,15 @@ margin-top: 20px;
     }
     .have a{
         text-decoration: none;
-        color: hotpink;
+        color: #e224c6;
     
+    }
+    #verp{
+        display: flex;
+        color: #e224c6;
+        justify-content: center;
+    }
+    #ver{
+        color: #e224c6;
+        text-decoration: none;
     }
