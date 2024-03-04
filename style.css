@@ -57,6 +57,7 @@ button{
     flex-direction: row;
     align-items: center;
     margin-left: 50px;
+    justify-content: space-around;
 }
 .second{
     display: flex;
@@ -151,4 +152,15 @@ hr{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+.first-img{
+    background-image: url('./Images/Frame\ 47.png');
+    background-size: cover;
+    
+}
+.glob{
+    background-color: #391A5B;
+    border-radius:15px ;
+    height: 153px;
+    width: 387px;
 }
