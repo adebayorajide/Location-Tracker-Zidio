@@ -1,0 +1,37 @@
+.footer {
+    width: 100vw;
+    height: 150px;
+    background-color: #210f35;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.socials li {
+    list-style-type: none;
+}
+
+.socials img {
+    width: 25px;
+    background-color: #fff;
+    margin: 0 5px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (max-width:600px) {
+    .socials {
+        flex-direction: column;
+    }
+}
