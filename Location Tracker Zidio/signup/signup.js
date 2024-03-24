@@ -39,17 +39,17 @@ formEl.addEventListener("submit", async (e)=>{
         return false;
     }
 
-    else if(confirmPassword.value !== password.value) {
-          errorEl.style.display = "block";
-          errorEl.innerText = "Password does not match"
-          return false;
-    }
+    // else if(confirmPassword.value !== password.value) {
+    //       errorEl.style.display = "block";
+    //       errorEl.innerText = "Password does not match"
+    //       return false;
+    // }
 
-     else if (!agree.checked) {
-        errorEl.style.display = "block";
-       errorEl.innerText = "You didn't agree to terms";
-       return false;
-    }
+    //  else if (!agree.checked) {
+    //     errorEl.style.display = "block";
+    //    errorEl.innerText = "You didn't agree to terms";
+    //    return false;
+    // }
     
  else {
        errorEl.style.display = "none";

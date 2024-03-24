@@ -12,7 +12,7 @@ function handleClick() {
 
   return (
     <nav className="navbar">
-      <div class="logo">
+      <div className="logo">
         <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
