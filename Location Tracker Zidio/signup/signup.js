@@ -17,21 +17,27 @@ const agree = document.getElementById("agree");
  });
     
 
-formEl.addEventListener("submit", async (e)=>{
-    e.preventDefault();
+formEl.addEventListener("submit", (e)=>{
+       e.preventDefault();
+    
     console.log("submit");
 
     
-     const formData = new FormData(formEl);
-     const data = new URLSearchParams(formData);
+     const form = new FormData(formEl);
+     const data = Object.fromEntries(form)
+     
 
-     fetch('https://geolocation-tracker-be.onrender.com/api/v1/auth/signup', {
+     fetch("https://geolocation-tracker-be.onrender.com/api/v1/auth/signup", {
        method: "POST",
-       body: "data",
+       headers: {
+         "Content-Type": "application/json",
+       },
+       body: JSON.stringify(data),
      })
        .then((res) => res.json())
-       .then((data) => console.log(data))
-       .catch((error) => console.log(error)); 
+       .then((res) => console.log(res))
+       .catch((error) => console.log(error));
+  
 
     if(nameEl.value === "" || nameEl.value === null || email.value === "" || email.value === null || password.value === "" || password.value === null) {
         errorEl.style.display = "block";

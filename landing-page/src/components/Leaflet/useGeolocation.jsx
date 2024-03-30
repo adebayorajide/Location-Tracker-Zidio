@@ -1,29 +1,42 @@
-import { Marker, Popup, useMapEvents } from  'react-leaflet'
-import {  useState } from "react"
-import L from 'leaflet'
+import {useState, useEffect} from 'react'
 
-function LocationMarker() {
-   const [position, setPosition] = useState(null)
-  const map = useMapEvents({
-    click() {
-      map.locate()
-    },
-    locationfound(e) {
-      setPosition(e.latlng)
-      map.flyTo(e.latlng, map.getZoom())
-    },
-  })
-  const markerIcon = new L.icon({
-    iconUrl: "src/Images/marker.jpg",
-    iconSize: [35, 45],
-    iconAnchor: [17, 46],
-    popupAnchor: [0, -46],
+function useGeolocation() {
+  const [location, setLocation] = useState({
+    loaded: false,
+    coordinates: {lat:"", lng: ""}
   });
 
-    return position === null ? null : (
-    <Marker position={position} icon={markerIcon}>
-      <Popup>You are here</Popup>
-    </Marker>
+  const onSuccess = location => {
+    setLocation({
+      loaded: true,
+      coordinates: {
+        lat: location.coords.latitude,
+        lng: location.coords.longitude,
+      },
+    });
+  };
+
+  const onError = error => {
+     setLocation({
+       loaded: true,
+       error,
+     });
+  }
+
+  useEffect(() => {
+    if( !("geolocation" in navigator) ){
+    onError(
+     {
+          code: 0,
+          message: "geolocation not supported"
+        });
+    }
+
+    navigator.geolocation.getCurrentPosition(onSuccess, onError)
+  }, [])
+  
+  return (
+    <div>useGeolocation</div>
   )
 }
-export default LocationMarker
+export default useGeolocation
