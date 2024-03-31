@@ -27,8 +27,8 @@ function handleClick() {
           </Link>
         </li>
         <li>
-          <Link to="/pricing" className="link">
-            Pricing
+          <Link to="/signup" className="link">
+            Signup
           </Link>
         </li>
         <li>
