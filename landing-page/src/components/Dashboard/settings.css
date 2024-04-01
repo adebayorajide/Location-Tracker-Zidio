@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(57, 7, 104);
+    margin-left: auto;
+    margin-right: auto;
+}
+.origin{
+     padding-left: 50px;
+     background-color:rgb(43, 10, 75);
+
+}
+.what{
+display: flex;
+align-items: center;
+    justify-content: space-around;
+}
+.ray{
+    display: flex;
+    flex-direction: column;
+}
+.prof{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.passport{
+    width: 40px;
+    height: 40px;
+}
+.mad{
+    margin: 0px;
+}
+h1{
+    color: white;
+    margin: 2px;
+}
+.det{
+    color: rgb(163, 42, 165);
+    margin: 0px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+input{
+    border-radius: 8px;
+    width: 150px;
+    background-color: rgb(57, 7, 104);
+    border-color: rgb(249, 203, 128);
+    margin: 5px;
+    border-style: groove;
+}
+.mail{
+    width: 200px;
+    height: 20px;
+}
+.bio{
+    width: 282px;
+    height: 100px;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+}
+label{
+    color: white;
+}
+ .to{
+    margin-left: 10px;
+} 
+.loc{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.lag{
+    margin-left: 5px;
+}
+.container{
+    border-radius: 10px;
+    border-style: groove;
+    padding: 10px;
+}
+.nam{
+    background-color:rgb(33, 5, 60);
+    padding: 1px;
+    border-radius: 10px;
+}
+.past{
+    width: 80px;
+    height: 80px;
+}
+.nami{
+    padding: 1px;
+}
+.del{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    
+}
+.edi{
+    display: flex;
+    flex-direction: column;
+}
+.upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border-style: dotted;
+}
+.beside{
+    border-style: groove;
+}

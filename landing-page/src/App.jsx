@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home.jsx"
 import './App.css'
 import Features from './pages/Features.jsx';
-import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
-import Pricing from './pages/Pricing.jsx';
+import Signup from './pages/Signup.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 
 function App() {
   
@@ -13,8 +13,8 @@ function App() {
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="features" element={<Features />} />
-    <Route path="pricing" element={<Pricing />} />
-    <Route path="about" element={<About />} />
+    <Route path="signup" element={<Signup />} />
+    <Route path="/dashboard" element={<Dashboard />} />
     <Route path="contact" element={<Contact />} />
   </Routes>
   </BrowserRouter>
