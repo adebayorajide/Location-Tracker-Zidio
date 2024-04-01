@@ -20,33 +20,33 @@ function Menu() {
       <h3 className='men'>Menu</h3>
       {/* </div> */}
     <div className="one">  
-    <img src={home} alt="" />
+    <img className='imo' src={home} alt="" />
     <p>Home</p>
     </div> 
     <div className="one">  
-    <img src={dashboard} alt="" />
+    <img className='imo' src={dashboard} alt="" />
     <p>Dashboard</p>
     </div> 
       <div className="one">
-      <img src={favority} alt="" />
+      <img src={favority} className='imo' alt="" />
         <p>Favourite</p>
       </div>
       <div className="one">
-      <img src={history} alt="" />
+      <img src={history} className='imo' alt="" />
       <p>History</p>
       </div>
       <div className="one">
-      <img src={saved} alt="" />
+      <img src={saved} className='imo' alt="" />
       <p>Saved</p>
       </div>
       </div>
       <div className="set">
         <div className="one">
-      <img src={logit} alt="myt" />
+      <img src={logit} className='imo' alt="myt" />
         <p>Settings</p>
         </div>
         <div className="one">
-        <img src={logut} alt="" />
+        <img src={logut} className='imo' alt="" />
         <p>Log Out</p>
 
         </div>
