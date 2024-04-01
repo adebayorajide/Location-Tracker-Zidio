@@ -170,13 +170,17 @@
 
 .stats {
   text-align: center;
+  background-color: lightgray;
+
 }
 
 .stats h1 {
   color: #210f35;
   font-size: 2rem;
 }
-
+.stats p{
+  color: #000;
+}
 .evi {
   display: flex;
   flex-wrap: wrap;

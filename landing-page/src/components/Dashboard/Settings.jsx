@@ -28,7 +28,7 @@ function Settings() {
       <p>Update your photo & Personal details here.</p>
       </div>
       <div className="wrapper">
-      <div className="container">
+      <div className="scontainer">
      <div className="nam">
         <h4 className='nami'>Personal Information</h4>
         </div>
