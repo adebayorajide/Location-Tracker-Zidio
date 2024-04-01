@@ -14,7 +14,7 @@ function Hero() {
         <div className="leftHero">
           <h1>
             Stay Connected, Stay Secured with <br />{" "}
-            <span id="name">Geotracker</span>
+            <span id="nyt">Geotracker</span>
           </h1>
           <p>
             Empower yourself with real time location tracking for peace of mind.
